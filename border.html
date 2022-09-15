@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border</title>
+    <style>
+        section {
+            border: 2px solid black;
+            height: 500px;
+            width: 900px;
+        }
+
+        h1 {
+            text-align: center;
+            border: 3px solid green;
+            border-radius: 20px;
+        }
+
+        div {
+            width: 500px;
+            height: 200px;
+            border-radius: 10px;
+            background-color: red;
+            margin: auto;
+            padding: 20px;
+            color: white;
+        }
+
+        section:nth-of-type(2) {
+            height: 500px;
+            width: 800px;
+            background-color: yellow;
+            background-image: url(https://images.unsplash.com/photo-1655427565427-34ea63c7ede6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        section:nth-of-type(3) div {
+            height: 30%;
+            width: 50%;
+            background-color: pink;
+            font-size: 10px;
+        }
+
+        ul {
+            font-size: 1.5em;
+        }
+        main{
+            font-size: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>This is h1 Heading.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est facere aspernatur molestiae. Nostrum similique
+            natus inventore animi voluptas ipsam quam accusantium, non explicabo officia tempora saepe voluptatem quae
+            assumenda! Quae nisi ad molestiae, ipsum repudiandae, commodi aspernatur explicabo sit, quas dolor dolorem
+            aut. Recusandae voluptate a sint dignissimos velit atque!</p>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur tempora illum delectus. Debitis
+            necessitatibus eum pariatur ducimus officiis neque itaque temporibus a dignissimos cumque eos laudantium
+            vel, commodi obcaecati officia?</div>
+    </section>
+    <section>
+
+    </section>
+    <section>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam commodi, esse natus voluptatibus quidem
+            expedita. Hic repudiandae quos, maiores expedita aspernatur temporibus tempora libero suscipit voluptate
+            quod deserunt harum dicta.
+        </div>
+        <main>
+        <ul>
+            <li>
+                <ul>1</ul>
+            </li>
+            <li>
+                <ul>2</ul>
+            </li>
+            <li>
+                <ul>3
+                    <li><ul>3.1</ul></li>
+                    <li><ul>3.2</ul></li>
+                    <li><ul>3.3
+                            <li>3.3.1</li>
+                            <li>3.3.2</li>
+                            <li>3.3.3</li>
+                    </ul></li>
+
+                </ul>
+            </li>
+        </ul>
+    </main>
+    </section>
+</body>
+
+</html>

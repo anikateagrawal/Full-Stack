@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second</title>
+    <style>
+        li:last-child{
+            color: red;
+        }
+        li:nth-of-type(2n+3){
+            color: blue;
+        }
+        h1::before{
+            content: 'this is before';
+            color: yellow;
+        }
+        h1::after{
+            content: 'this is before\260E';
+            color: yellow;
+        }
+        section{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <section>
+    <ul>
+        <li>This is list</li>
+        <li>This is list</li>
+        <li>This is list</li>
+        <li>This is list</li>
+        <li>This is list</li>
+        <li>This is list</li>
+        <li>This is list</li>
+        <li>This is list</li>
+    </ul>
+    <h1>This is a H1 heading </h1>
+</section>
+</body>
+</html>

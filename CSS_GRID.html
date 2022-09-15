@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID</title>
+    <style>
+        .container{
+            width: 960px;
+            margin: 50px auto;
+            padding:10px ;
+            display: grid;
+            grid-template-columns:1fr 1fr 1fr 2fr ;
+            gap: 20px;
+            /* grid-template-rows: 1fr ; */
+        }
+        .d{
+            background-color: steelblue;
+            border: 4px solid lightblue;
+            color: white;
+            padding: 20px;
+            font-size: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+         .i{
+            /* align-self: end;
+            justify-self: start; */
+            /* grid-column-start: 1;
+            grid-column-end: 3; */
+            grid-column: 1/3;
+        } 
+        .d:nth-of-type(4){
+            /* grid-row-start: 2;
+            grid-row-end: 4; */
+            grid-row: 2/4;
+        }
+        @media screen and (max-width:500px) {
+            .container{
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="d i">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit a</div>
+        <div class="d">item</div>
+        <div class="d">item</div>
+        <div class="d">item</div>
+        <div class="d">item</div>
+        <div class="d">item</div>
+        <div class="d">item</div>
+        <div class="d">item</div>
+    </div>
+</body>
+</html>

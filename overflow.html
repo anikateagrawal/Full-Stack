@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        .div{
+            width: 150px;
+            height: 150px;
+            border: 2px solid black;
+            font-size: large;
+            overflow: auto;
+        }
+        img{
+            float: right;
+        }
+        section{
+            border: 3px solid black;
+            padding: 20px;
+        }
+        p{
+            clear:right;
+        }
+        main{
+            height: 600px;
+            /* width: 1000px; */
+            border: 2px solid black;
+            margin: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            /* flex-wrap: wrap; */
+        }
+        .d{
+            height: 200px;
+            width: 150px;
+            border: 5px solid red;
+            background-color: yellow;
+            align-self: flex-start;
+        }
+        div:nth-of-type(2){
+            /* flex-grow: 1; */
+            flex-shrink: 3;
+        }
+        div:nth-of-type(1){
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="div">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, dolore illum fugiat sunt explicabo ducimus totam quod fugit voluptatem enim iste praesentium optio iure? Repudiandae velit alias quisquam assumenda possimus officiis pariatur error reiciendis, sapiente consequatur, maxime deleniti blanditiis placeat, voluptate quae? Corrupti nihil perferendis reiciendis odit suscipit enim quisquam?
+    </div>
+    <section>
+        <h1>This is news</h1>
+        <img src="https://images.unsplash.com/photo-1572949645841-094f3a9c4c94?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="image" height="100px" width="150px">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius expedita tempore, natus minima maxime dolores obcaecati, veniam tenetur incidunt adipisci, ut perspiciatis. Blanditiis ratione dolorem dolorum quas natus! Modi consequatur nemo velit vero qui necessitatibus facilis magni minus dicta cupiditate explicabo natus ullam voluptates asperiores quibusdam nostrum fuga dolore repellendus in reprehenderit, optio esse. Consequatur unde iste voluptatibus suscipit porro. Expedita aperiam, voluptas accusantium voluptatum mollitia facere molestiae, quod exercitationem et necessitatibus maxime, perferendis enim omnis adipisci dolores quos vitae eligendi optio vel repellat eos suscipit quasi labore. Culpa officia animi distinctio, quaerat similique et ipsa dolor eum exercitationem! Eveniet!</p>
+        
+    </section>
+    <main>
+        <div class="d"></div>
+        <div class="d"></div>
+        <div class="d"></div>
+        <div class="d"></div>
+        <div class="d"></div>
+        
+    </main>
+</body>
+</html>
