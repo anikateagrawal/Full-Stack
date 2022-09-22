@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid_Cards</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            /* height: 100vh; */
+            width: 100%;
+            padding: 100px;
+            display: grid;
+            grid-template-areas: "card1 card1 card2 card3"
+            "card4 card5 card5 card3";
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 20px;
+            color: white;
+            background-color: rgb(218, 255, 255);
+        }
+        p{
+            opacity: 70%;
+        }
+        .card{
+            border-radius: 20px;
+            box-shadow: 0px 0px 5px black;
+            padding: 20px;
+        }
+        .card1{
+            grid-area: card1;
+            background: purple;
+            /* background-image: url(./images/gray-quotation.png); */
+            /* background-repeat: no-repeat; */
+        }
+        .card2{
+            grid-area: card2;
+            background-color: green;
+        }
+        .card3{
+            grid-area: card3;
+            color: black;
+            background-color: white;
+        }
+        .card4{
+            grid-area: card4;
+            color: black;
+            background-color: white;
+        }
+        .card5{
+            grid-area: card5;
+            background-color: black;
+        }
+        header{
+            display: flex;
+        }
+        .i{
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            margin: 10px;
+        }
+        .name{
+            padding: 10px;
+        }
+        @media screen and (max-width:800px){
+            .container{
+                padding: 40px;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+                grid-template-areas: "card1"
+                "card2" " card3" "card4" "card5";
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card card1">
+            <header>
+                <img src="./images/dp.jpg" alt="" class="i">
+                <div class="name">
+                    <h2>Daniel</h2>
+                    <p>@abc</p>
+                </div>
+            </header>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, repudiandae.</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium iure quae totam ad cumque delectus iste neque magnam laudantium animi!</p>
+        </div>
+        <div class="card card2">
+            <header>
+                <img src="./images/dp.jpg" alt="" class="i">
+                <div class="name">
+                    <h2>Daniel</h2>
+                    <p>@abc</p>
+                </div>
+            </header>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, repudiandae.</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium iure quae totam ad cumque delectus iste neque magnam laudantium animi!</p>
+        </div>
+        <div class="card card3">
+            <header>
+                <img src="./images/dp.jpg" alt="" class="i">
+                <div class="name">
+                    <h2>Daniel</h2>
+                    <p>@abc</p>
+                </div>
+            </header>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, repudiandae.</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium iure quae totam ad cumque delectus iste neque magnam laudantium animi!</p>
+        </div>
+        <div class="card card4">
+            <header>
+                <img src="./images/dp.jpg" alt="" class="i">
+                <div class="name">
+                    <h2>Daniel</h2>
+                    <p>@abc</p>
+                </div>
+            </header>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, repudiandae.</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium iure quae totam ad cumque delectus iste neque magnam laudantium animi!</p>
+        </div>
+        <div class="card card5">
+            <header>
+                <img src="./images/dp.jpg" alt="" class="i">
+                <div class="name">
+                    <h2>Daniel</h2>
+                    <p>@abc</p>
+                </div>
+            </header>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, repudiandae.</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium iure quae totam ad cumque delectus iste neque magnam laudantium animi!</p>
+        </div>
+    </div>
+</body>
+</html>
