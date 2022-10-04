@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            user-select: none;
+        }
+        header{
+            width: 100%;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5px 50px;
+            position: fixed;
+            top: 0;
+            z-index: 10;
+        }
+        li{
+            text-decoration: none;
+            list-style: none;
+            margin: 10px;
+        }
+        li:hover{
+            color: burlywood;
+            cursor: pointer;
+            text-decoration: underline;
+            transition: 0.5s;
+        }
+        .shop i:hover{
+            color: burlywood;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        a{
+            display: block;
+            text-decoration: none;
+        }
+        .f{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .shop i{
+            font-size: 20px;
+            padding: 10px;
+        }
+        main{
+            background-image: url(./images/home-img.jpeg);
+            background-size: cover;
+            padding: 200px 100px;
+        }
+        .box{
+            font-size: 30px;
+            width: 50%;
+        }
+        .box p{
+            opacity: 70%;
+            margin: 20px 0px;
+        }
+        button{
+            width: 250px;
+            background-color: burlywood;
+            padding: 10px 20px;
+            font-size: 30px;
+            border-radius: 10px;
+            transition: 1s;
+        }
+        button:hover{
+            width: 400px;
+        }
+        section{
+            padding: 100px 100px;
+            background-color: black;
+        }
+        section h1{
+            font-size: 2em;
+            text-align: center;
+            padding: 20px;
+        }
+        section span{
+            color: burlywood;
+        }
+        section .im{
+            width: 48%;
+            height: 100%;
+            padding: 20px;
+        }
+        section .box2{
+            width: 48%;
+            padding: 100px 0px;
+        }
+        section h2{
+            width: 100%;
+            padding: 20px;
+        }
+        section p{
+            width: 100%;
+            opacity: 70%;
+            padding: 10px;
+        }
+        .card{
+            width: 280px;
+            border: 2px solid gray;
+            border-radius:20px ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+            margin: 20px;
+        }
+        .card h3{
+            padding: 10px;
+        }
+        h4{
+            padding: 20px 0px;
+        }
+        h4 span{
+            text-decoration: line-through;
+            opacity: 70%;
+            color: white;
+        }
+        #menu button,#about button{
+            width: 150px;
+            padding: 5px 10px;
+            font-size: 20px;
+        }
+        #menu button:hover,#about button:hover{
+            width: 200px;
+        }
+        #menu .img{
+            width: 100%;
+            height: 150px;
+        }
+        #menu img{
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./images/logo.png" alt="logo">
+        </div>
+        <nav>
+            <ul class="f">
+                <a href="#home"><li>Home</li></a>
+                <a href="#about"><li>About</li></a>
+                <a href="#menu"><li>Menu</li></a>
+                <a href="#"><li>Products</li></a>
+                <a href="#"><li>Review</li></a>
+                <a href="#"><li>Contact</li></a>
+                <a href="#"><li>Blogs</li></a>
+            </ul>
+        </nav>
+        <div class="shop">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+        </div>
+    </header>
+    <main id="home">
+        <div class="box">
+            <h1>FRESH COFFEE IN THE MORNING</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae perspiciatis odit a consectetur modi saepe quidem ut deserunt voluptas aspernatur?</p>
+            <button>Get Yours Now</button>
+        </div>
+    </main>
+    <section id="about">
+        <h1><span>ABOUT </span>US</h1>
+        <div class="about f">
+            <div class="im">
+                <img src="./images/about-img.jpeg" alt="About img" width="100%" height="100%">
+            </div>
+            <div class="box2">
+                <h2 >What Makes Our Coffee Special?</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ipsa temporibus voluptas minus nesciunt dolorem! Eius sit eveniet numquam dignissimos dolorum rem totam quod dicta ducimus minus nisi, unde ipsum perspiciatis animi, molestiae id, alias commodi soluta voluptatibus dolores accusamus?
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, minus.</p>
+                <button>Learn More</button>
+            </div>
+        </div>
+    </section>
+    <section id="menu">
+        <h1>OUR <span>MENU</span></h1>
+        <div class="cards f">
+        <div class="card">
+            <div class="img">
+                <img src="./images/menu-1.png" alt="">
+            </div>
+            <h3>Tasty And Healthy</h3>
+            <h4>$19.99 <span>$25.55</span></h4>
+            <button>Order Now</button>
+        </div>
+        <div class="card">
+            <div class="img">
+                <img src="./images/menu-2.png" alt="">
+            </div>
+            <h3>Tasty And Healthy</h3>
+            <h4>$19.99 <span>$25.55</span></h4>
+            <button>Order Now</button>
+        </div>
+        <div class="card">
+            <div class="img">
+                <img src="./images/menu-3.png" alt="">
+            </div>
+            <h3>Tasty And Healthy</h3>
+            <h4>$19.99 <span>$25.55</span></h4>
+            <button>Order Now</button>
+        </div>
+        <div class="card">
+            <div class="img">
+                <img src="./images/menu-4.png" alt="">
+            </div>
+            <h3>Tasty And Healthy</h3>
+            <h4>$19.99 <span>$25.55</span></h4>
+            <button>Order Now</button>
+        </div>
+        <div class="card">
+            <div class="img">
+                <img src="./images/menu-5.png" alt="">
+            </div>
+            <h3>Tasty And Healthy</h3>
+            <h4>$19.99 <span>$25.55</span></h4>
+            <button>Order Now</button>
+        </div>
+        <div class="card">
+            <div class="img">
+                <img src="./images/menu-6.png" alt="">
+            </div>
+            <h3>Tasty And Healthy</h3>
+            <h4>$19.99 <span>$25.55</span></h4>
+            <button>Order Now</button>
+        </div>
+        
+    </div>
+    </section>
+</body>
+</html>
