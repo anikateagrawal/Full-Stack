@@ -9,11 +9,11 @@
         *{
             padding: 0;
             margin: 0;
-            box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box; 
         }
-        .container{
+        .compliments{
             /* height: 100vh; */
+            font-family: Arial, Helvetica, sans-serif;
             width: 100%;
             padding: 100px;
             display: grid;
@@ -25,52 +25,52 @@
             color: white;
             background-color: rgb(218, 255, 255);
         }
-        p{
+        .compliments p{
             opacity: 70%;
         }
-        .card{
+        .compliments .card{
             border-radius: 20px;
             box-shadow: 0px 0px 5px black;
             padding: 20px;
         }
-        .card1{
+        .compliments .card1{
             grid-area: card1;
             background: purple;
             /* background-image: url(./images/gray-quotation.png); */
             /* background-repeat: no-repeat; */
         }
-        .card2{
+        .compliments .card2{
             grid-area: card2;
             background-color: green;
         }
-        .card3{
+        .compliments .card3{
             grid-area: card3;
             color: black;
             background-color: white;
         }
-        .card4{
+        .compliments .card4{
             grid-area: card4;
             color: black;
             background-color: white;
         }
-        .card5{
+        .compliments .card5{
             grid-area: card5;
             background-color: black;
         }
-        header{
+        .compliments header{
             display: flex;
         }
-        .i{
+        .compliments .i{
             border-radius: 50%;
             height: 50px;
             width: 50px;
             margin: 10px;
         }
-        .name{
+        .compliments .name{
             padding: 10px;
         }
         @media screen and (max-width:800px){
-            .container{
+            .compliments{
                 padding: 40px;
                 grid-template-columns: 1fr;
                 grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -81,7 +81,7 @@
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="compliments">
         <div class="card card1">
             <header>
                 <img src="./images/dp.jpg" alt="" class="i">

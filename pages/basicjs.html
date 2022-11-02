@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic JS</title>
+</head>
+<body>
+    <script>
+        function sum(a,b){
+            return 1;
+        }
+        function sum(){
+            return;
+        }
+        console.log(sum(1,2)===undefined);
+        // console.log(s(5,6));
+        let s=(a,b)=>a+b;
+        let n=255;
+        console.log(n.toString(16));
+        console.log(1e-6);
+        console.log(Math.pow(2,3));
+        let n2=1.23545
+        console.log(n2.toFixed(2));
+        let str='this is a string and is an example';
+        let p=-1;
+        do
+        {
+            p=str.indexOf('is',p+1);
+            // if (p!=-1)alert(p); 
+        }while(p!=-1);
+
+        console.log(str.slice(1,25));
+        console.log(str.substring(3,1));
+        
+        let arr=new Array(5);
+        console.log(arr);
+        let arr2=[2,3,4,5,'apples','mangoes',true,function (){console.log(5)}];
+        console.log(arr2);
+        console.log(arr2[7]());
+        console.log(arr2.pop());
+        arr2.push(10);
+        console.log(arr2);
+        arr2.shift();
+        console.log(arr2);
+        arr2.unshift(2);
+        console.log(arr2);
+        console.log([2]==[2]);
+        let a=[5];
+        let b=a;
+        console.log(a==b);
+        ar=[[1,2,3],[4,5,6],[7,8,9]];
+        console.log(ar);
+        let sum2=0;
+        arrr=[];
+        for(let i=0;i<ar.length;i++){
+            for(let j=0;j<ar[i].length;j++){
+                console.log(i+" "+j);
+                sum2+=ar[i][j];
+                arrr.push(ar[i][j]);
+            }
+        }
+        console.log(sum2);
+        console.log(arrr);
+        let ab=['mango','apples','banana'];
+        
+        ab.splice(2,0,'grapes');
+        console.log(ab);
+        console.log(ab.splice(0,2));
+
+        let s1="This is a dev class";
+        let ss=s1.split(" ");
+        let s2="";
+        ss.forEach((ss)=>{
+            for(let i=ss.length-1;i>=0;i--)
+            {
+                s2+=ss[i];
+            }
+            s2+=" ";
+        });
+        console.log(s2.trim());
+
+        let h=[1,2,3,4,5,6];
+        let g=h.filter(odd);
+        function odd(num){
+            if(num%2==1)return true;
+            return false;
+        }
+        console.log(g);
+        console.log(s1.split(" ").map((sss)=>{return sss.split("").reverse().join("");}).join(" "));
+
+        let cc="background-color-red";
+        let s3="";
+        cc=cc.split("-");
+        s3+=cc[0];
+        for(let i=1;i<cc.length;i++){
+            s3+= cc[i][0].toLocaleUpperCase()+cc[i].slice(1);
+        }
+        console.log(s3);
+    </script>
+</body>
+</html>

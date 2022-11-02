@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let obj={
+            'new car':'audi'
+        }
+        console.log(obj['new car']);
+        let str='aabc bbca caab ddac';
+        let fr={}
+        console.log(fr[0]);
+        for (let i =0;i<str.length;i++){
+            if(fr[str[i]]===undefined){
+                fr[str[i]]=1;
+            }
+            else{
+                fr[str[i]]=fr[str[i]]+1;
+            }
+        }
+        delete fr[' '];
+        console.log(fr);
+
+        let person={
+            FirstName:'John',
+            age:24
+        }
+        let p1={
+            lastName:'doe',
+            __proto__:person
+        }
+        // let p1=Object.create(person);
+        console.log(p1.age);
+
+        
+
+    </script>
+</body>
+</html>
