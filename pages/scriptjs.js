@@ -29,3 +29,42 @@ function outer(){
 }
 let innerref=outer();
 innerref();
+
+let a=true;
+// setTimeout(()=>
+// a=false,1000);
+// while(a){
+//     console.log("hello");
+// }
+
+setInterval(()=>{
+    if(a){
+        console.log("hello");
+    }
+},1000);
+
+setTimeout(() => {
+    a=false;
+}, 5050);
+
+
+const p=new Promise(function(res,rej){
+    setTimeout(()=>{
+        let randomNum=Math.floor(Math.random()*10);
+        if(randomNum%2==0){
+            res(randomNum);
+        }
+        else{
+            rej(randomNum);
+        }
+    },2000);
+});
+
+p.then((data)=>{
+    console.log("resolve "+data);
+    return "abc";
+}).then((data)=>{
+    console.log(data);
+}).catch((data)=>{
+    console.log("reject "+data);
+});
