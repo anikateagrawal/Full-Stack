@@ -50,6 +50,7 @@
       }
       body {
         background-color: var(--radio-color);
+        padding-bottom: 50px;
       }
     </style>
   </head>
@@ -61,12 +62,7 @@
             <h1 id="header-title">MY LIST</h1>
           </div>
           <div class="col-md-6 align-self-center">
-            <input
-              type="text"
-              class="form-control"
-              id="filter"
-              placeholder="Search Items..."
-            />
+            <input type="text" class="form-control" id="filter"  placeholder="Search Items..." onkeyup="search()"  />
           </div>
         </div>
       </div>
@@ -202,6 +198,19 @@
         }
       }
       
+      function search(){
+        filter=document.getElementById('filter').value.toUpperCase();
+        li=document.getElementsByTagName('li');
+        Array.from(li).forEach((li)=>{
+            text=li.innerText.substring(0,li.innerText.length-1);
+            if(text.toUpperCase().indexOf(filter)==-1){
+              li.style.display='none';
+            }
+            else{
+              li.style.display="";
+            }
+        });
+      }
 
     </script>
   </body>
