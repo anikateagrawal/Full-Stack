@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+    <script>
+        const url="https://api.coingecko.com/api/v3/coins/list?include_platform=true";
+        // console.log(url);
+        let person={
+            name:'Anikate',
+            age:"20"
+        }
+        // var data;
+        console.log(person);
+        const xhr=new XMLHttpRequest;
+        xhr.onload=function(){
+            data=this.response;
+            console.log(data);
+        }
+        xhr.onerror=function(){
+
+        }
+        xhr.open("GET",url);
+        xhr.send();
+    </script>
+</body>
+</html>
