@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            user-select: none;
+        }
+        main{
+            background-color: cornflowerblue;
+            /* height: 100vh; */
+            /* padding: 100px 0px; */
+        }
+        header{
+            height: 200px;
+            background-color: rgba(0, 0, 0, 0.824);
+            font-size: 40px;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .img{
+            width: 400px;
+            height: 450px;
+        }
+        section{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 40px;
+        }
+        .surprises{
+            width: 800px;
+            /* height: 450px; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            flex-direction: column;
+            background-color: rgba(0, 0, 0, 0.849);
+            padding: 20px;
+        }
+        input[type="checkbox"]{
+            display: none;
+        }
+        input[type="checkbox"]:checked ~ .text{
+            display: flex;
+        }
+        .s{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 10px;
+        }
+        label{
+            width: 250px;
+            /* height: 70px; */
+            padding: 10px;
+            background-color: red;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        label:hover{
+            opacity: 0.8;
+        }
+        .text{
+            display: none;
+            padding: 10px;
+        }
+        #i0{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>For the one who deserves my efforts!</header>
+        <section>
+            <div class="surprises">
+                <h1>Surprises</h1>
+                <div class="s">
+                    <label for="s1">Surprise 1</label><input type="checkbox" name="s1" id="s1">
+                    <div class="text">Thanks for being my best friend.</div>
+                </div>
+                <div class="s">
+                    <label for="s2">Surprise 2</label><input type="checkbox" name="s2" id="s2">
+                    <div class="text">Thanks for staying with me through everything.</div>
+                </div>
+                <div class="s">
+                    <label for="s3">Surprise 3</label><input type="checkbox" name="s3" id="s3">
+                    <div class="text">Thanks for never changing and always giving me the most importance.</div>
+                </div>
+                <div class="s">
+                    <label for="s4">Surprise 4</label><input type="checkbox" name="s4" id="s4">
+                    <div class="text">I hope we stay friends forever.</div>
+                </div>
+            </div>
+            <div class="img">
+                <img  id="i1" src="./images/IMG-20221215-WA0002.jpg" alt="" height="100%" width="100%">
+                <img id="i0" src="./images/Ishika.jpg" alt="" height="100%" width="100%">
+            </div>
+        </section>
+    </main>
+    
+    <script>
+        var i=1;
+        setInterval(()=>{
+            document.getElementById(`i${i}`).style.display="none";
+            i=(i+1)%2;
+            document.getElementById(`i${i}`).style.display="block";
+        },2000);
+    </script>
+</body>
+</html>
