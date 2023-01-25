@@ -12,7 +12,8 @@ app.listen(port,()=>{
 app.set('view engine','ejs');
 
 app.get('/home',(req,res)=>{
-
     rn=Math.floor(Math.random()*10);
     res.render('index',{rn});
-})
+});
+
+app.use(express.static(path.join(__dirname,'public')));
