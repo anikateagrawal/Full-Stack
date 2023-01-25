@@ -8,7 +8,11 @@
 </head>
 <body>
     <h1>This is an EJS File</h1>
-    <h2>Random Number: <%= randomNumber=Math.floor(Math.random()*10);%></h2>
-    
+    <h2>Random Number: <%= randomNumber=rn;%></h2>
+    <% if(randomNumber%2===0){
+        %> <h2><%=rn%> is even Number.</h2>
+    <%} else {%>
+    <h2> <%=rn%> is odd number.</h2>
+    <%}%>
 </body>
 </html>
